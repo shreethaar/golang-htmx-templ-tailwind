@@ -1,2 +1,3 @@
 here-is-root
 .env
+*_templ.go

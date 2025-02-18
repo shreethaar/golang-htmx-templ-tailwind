@@ -2,10 +2,12 @@ package handlers
 
 import (
     "net/http"
-    "fmt"
+ //   "fmt"
+    "trial-run/views/foo"
 )
+
 func HandleFoo(w http.ResponseWriter,r *http.Request) error {
-    w.Write([]byte("foo"))
-    return fmt.Errorf("helpme")
+    return foo.Index().Render(r.Context(),w)
+    //return fmt.Errorf("helpme")
 
 }
