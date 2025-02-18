@@ -1,10 +1,9 @@
 package foo
 
-import (
-    "trial-run/views/layouts"
+import "trial-run/views/layouts"
 
 templ Index() {
-    @layouts.Base() {
-    <div>hello</div>
-    }
+	@layouts.Base() {
+		<div>hello from the other side</div>
+	}
 }
